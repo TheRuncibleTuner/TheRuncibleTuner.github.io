@@ -1,19 +1,83 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+margin:0;
+font-family:Lato;
+}
+
 .topbar {
 position:fixed;
 top:0;
 left:0;
-background:#333;
-height:1.5em;
+background:black;
+height:5px;
 width:100%;
 }
 
+.left, .right {
+}
+
+.left {
+width:75%;
+display:inline-block;
+float:left;
+}
+
+.right {
+width:25%;
+display:inline-block;
+float:right;
+height:100%;
+border-left:5px solid black;
+background-color:#e3e3e3;
+padding:1ex;
+color:#444;
+}
+.right .right-paragraph {
+margin:1em 0;
+}
+.right .right-paragraph-title {
+font-weight:700;
+font-size:105%;
+}
+
 .titlestrip, .content {
-position:relative;
-top:1.5em;
 padding:1em;
 }
 
+.content iframe {
+border:none;
+}
+
+.entry .entry-date {
+background:#333;
+width:6em;
+color:white;
+padding:1em 1ex;
+text-align:center;
+font-size:105%;
+font-weight:700;
+float:left;
+}
+.entry .entry-content {
+padding:1ex 1em;
+padding-left:7em;
+}
 
 .titlestrip {
-font-family:Lato;
+border-bottom:5px solid black;
+margin-bottom:1em;
+}
+.titlestrip .titlestrip-title {
+font-weight:700;
+font-size:300%;
+text-transform:uppercase;
+margin:0.5ex 0;
+}
+.titlestrip .titlestrip-subtitle {
+margin:0 2ex;
 }
