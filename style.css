@@ -73,11 +73,15 @@ border-bottom:5px solid black;
 margin-bottom:1em;
 }
 .titlestrip .titlestrip-title {
-font-weight:700;
+font-weight:900;
 font-size:300%;
 text-transform:uppercase;
 margin:0.5ex 0;
 }
 .titlestrip .titlestrip-subtitle {
 margin:0 2ex;
+font-weight:300;
+}
+.titlestrip .titlestrip-subtitle strong {
+color:#1f78b4
 }
