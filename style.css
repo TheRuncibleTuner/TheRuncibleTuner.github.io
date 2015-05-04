@@ -3,5 +3,11 @@ position:fixed;
 top:0;
 left:0;
 background:#333;
-height:1em;
+height:1.5em;
+width:100%;
+}
+
+.content {
+position:relative;
+margin:1em;
 }
