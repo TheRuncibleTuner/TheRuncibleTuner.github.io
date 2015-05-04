@@ -9,6 +9,15 @@ margin:0;
 font-family:Lato;
 }
 
+a:hover {
+opacity:0.7;
+}
+a {
+text-decoration:none;
+color:#e31a1c;
+transition:all 0.2s ease-in-out;
+}
+
 .topbar {
 position:fixed;
 top:0;
@@ -22,17 +31,17 @@ width:100%;
 }
 
 .left {
-width:75%;
+width:77%;
 display:inline-block;
 float:left;
 }
 
 .right {
-width:25%;
+width:23%;
 display:inline-block;
 float:right;
 height:100%;
-border-left:5px solid black;
+border-left:0.5ex solid black;
 background-color:#e3e3e3;
 padding:1ex;
 color:#444;
@@ -43,6 +52,11 @@ margin:1em 0;
 .right .right-paragraph-title {
 font-weight:700;
 font-size:105%;
+}
+.right .right-paragraph-content {
+font-weight:300;
+margin:0.5ex 1em;
+text-align:justify;
 }
 
 .titlestrip, .content {
@@ -63,14 +77,20 @@ font-size:105%;
 font-weight:700;
 float:left;
 }
+.entry .entry-author {
+padding-left:7em;
+font-weight:200;
+}
 .entry .entry-content {
 padding:1ex 1em;
 padding-left:7em;
 }
 
 .titlestrip {
-border-bottom:5px solid black;
+border-bottom:0.5ex solid black;
+border-left:2ex solid black;
 margin-bottom:1em;
+padding-left:2em;
 }
 .titlestrip .titlestrip-title {
 font-weight:900;
@@ -84,4 +104,10 @@ font-weight:300;
 }
 .titlestrip .titlestrip-subtitle strong {
 color:#1f78b4
+}
+.titlestrip .titlestrip-art {
+display:table-cell;
+height:100%;
+background:black;
+margin:0 1ex 0 0;
 }

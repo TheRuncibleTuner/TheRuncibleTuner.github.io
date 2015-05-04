@@ -8,26 +8,48 @@
 <!--  <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:700' rel='stylesheet' type='text/css'>-->
   <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+
+  <script type="text/javascript" src="content/latest.js"></script>
+  <script type="text/javascript">
+    function initContent() {
+       var contentDom = document.getElementById("content");
+       var frame = document.createElement("iframe");
+       frame.setAttribute("src", "content/" + latest + ".html");
+       contentDom.appendChild(frame);
+    }
+  </script>
 </head>
 
-<body>
+<body onload="initContent()">
    <div class="topbar"></div>
    <div class="left">
       <div class="titlestrip">
          <h1 class="titlestrip-title">The Runcible Tuner</h1>
          <h3 class="titlestrip-subtitle">a blog on <strong>software bloat</strong> in big data and web applications</h3>
       </div>
-      <div class="content">
-         <iframe src="content/0.html"></iframe>
+      <div class="content" id="content">
       </div>
    </div>
 
    <div class="right">
       <div class="right-paragraph">
          <div class="right-paragraph-title">About This Blog</div>
+         <div class="right-paragraph-content">
+            Experiences and musings on the performance of big applications, those
+            operating on large volumes of data or under high volumes of load.
+         </div>
+
+         <div class="right-paragraph-content">
+            Within, you will find <strong>diaries</strong> of our experiences with getting these applications to run well,
+            <strong>brainstormers</strong> on how to make things better, and
+            <strong>documents</strong> of actual changes we've made to core technologies.
+         </div>
       </div>
       <div class="right-paragraph">
-         <div class="right-paragraph-title">About The Author</div>
+         <div class="right-paragraph-title">About The Authors</div>
+         <div class="right-paragraph-content">
+            <a href="http://researcher.watson.ibm.com/researcher/view.php?person=us-nickm">Nick Mitchell</a>, a 15-year veteran of <a href="http://ibm.com">IBM</a>.
+         </div>
       </div>
       <div class="right-paragraph">
          <div class="right-paragraph-title">History</div>
